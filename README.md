@@ -57,19 +57,15 @@ A mini compiler built with Python and ttkbootstrap GUI. It supports basic arithm
 
 Run:
 
-   python main.py
+     python main.py
 
 Make sure `main.py` and the following structure exist:
 
-   compiler/
-
-   ├── lexer.py
-   
-   ├── parser.py
-   
-   ├── assembler.py
-   
-   └── disassembler.py
+     compiler/
+      ├── lexer.py
+      ├── parser.py
+      ├── assembler.py
+      └── disassembler.py
 
 --------------------------
 #💡 Input Format
@@ -77,15 +73,15 @@ Make sure `main.py` and the following structure exist:
 
 For Example:
 
-DIVDIV 16 4 2
+    DIVDIV 16 4 2
 
 Standard assignment:
 
-   x = 16 / 4 / 2
+     x = 16 / 4 / 2
 
 Custom instruction:
 
-   DIVDIV 16 4 2
+     DIVDIV 16 4 2
 
 --------------------------
 🌳 Parse Tree (for `x = 16 / 4 / 2`)
@@ -101,9 +97,9 @@ The expression is parsed into a right-associative binary tree:
 
 Which evaluates as:
 
-   x = (16 / 4) / 2
+     x = (16 / 4) / 2
    
-   x = 4 / 2 = 2.0
+     x = 4 / 2 = 2.0
 
 --------------------------
 🧠 What Happens?
@@ -113,17 +109,17 @@ Example: x = 16 / 4 / 2
 
 Tokenized ➝ Parsed ➝ TAC:
 
-   t1 = 16 / 4
+     t1 = 16 / 4
    
-   t2 = t1 / 2
+     t2 = t1 / 2
    
-   x = t2
+     x = t2
 
 Evaluation ➝ Result: x = 2.0
 
 Custom instruction:
 
-   DIVDIV 16 4 2
+     DIVDIV 16 4 2
    
    ➝ Interpreted as: result = 16 / 4 / 2
    
@@ -135,25 +131,25 @@ Custom instruction:
 
 Raw disassembly of output.cobj using:
 
-   objdump -d -M intel output.cobj
+     objdump -d -M intel output.cobj
 
 To filter relevant instructions:
 
-   objdump -d -M intel output.cobj | grep -E "mov|div|imul|add|sub"
+     objdump -d -M intel output.cobj | grep -E "mov|div|imul|add|sub"
 
 Simplified View:
 
-   mov $16, %eax
+     mov $16, %eax
    
-   mov $4, %ebx
+     mov $4, %ebx
    
-   div %ebx       ; EAX = 4
+     div %ebx       ; EAX = 4
    
-   mov $2, %ecx
+     mov $2, %ecx
    
-   div %ecx       ; EAX = 2
+     div %ecx       ; EAX = 2
    
-   mov %eax, [x]
+     mov %eax, [x]
 
 --------------------------
 📂 Folder Structure
