@@ -21,12 +21,13 @@ A mini compiler built with Python and ttkbootstrap GUI. It supports basic arithm
 --------------------------
 1. Clone the repository:
    git clone https://github.com/yourusername/sage_compiler.git
+   
    cd sage_compiler
 
-2. Install dependencies:
+3. Install dependencies:
    pip install -r requirements.txt
 
-3. Install `objdump` if missing:
+4. Install `objdump` if missing:
    Linux:
      sudo apt install binutils
    Windows:
