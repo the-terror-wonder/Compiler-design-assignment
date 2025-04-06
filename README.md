@@ -8,11 +8,11 @@ A mini compiler built with Python and ttkbootstrap GUI. It supports basic arithm
 --------------------------
 - Parse and compile expressions like:
 
-  DIVDIV A B C
+      DIVDIV A B C
   
 - Special command support:
 
-  DIVDIV A B C
+      DIVDIV A B C
   
 - Generate .cobj object code
   
@@ -34,7 +34,6 @@ A mini compiler built with Python and ttkbootstrap GUI. It supports basic arithm
 1. Clone the repository:
    
        git clone https://github.com/yourusername/sage_compiler.git
-   
        cd sage_compiler
 
 2. Install dependencies:
@@ -44,11 +43,8 @@ A mini compiler built with Python and ttkbootstrap GUI. It supports basic arithm
 3. Install `objdump` if missing:
    
        Linux:
-   
            sudo apt install binutils
-   
        Windows:
-   
          Install via MinGW or use WSL
 
 --------------------------
@@ -98,7 +94,6 @@ The expression is parsed into a right-associative binary tree:
 Which evaluates as:
 
      x = (16 / 4) / 2
-   
      x = 4 / 2 = 2.0
 
 --------------------------
@@ -110,9 +105,7 @@ Example: x = 16 / 4 / 2
 Tokenized ➝ Parsed ➝ TAC:
 
      t1 = 16 / 4
-   
      t2 = t1 / 2
-   
      x = t2
 
 Evaluation ➝ Result: x = 2.0
@@ -140,37 +133,24 @@ To filter relevant instructions:
 Simplified View:
 
      mov $16, %eax
-   
      mov $4, %ebx
-   
      div %ebx       ; EAX = 4
-   
      mov $2, %ecx
-   
      div %ecx       ; EAX = 2
-   
      mov %eax, [x]
 
 --------------------------
 📂 Folder Structure
 --------------------------
-.
-
-├── compiler/
-
-│   ├── lexer.py
-
-│   ├── parser.py
-
-│   ├── assembler.py
-
-│   └── disassembler.py
-
-├── main.py
-
-├── output.cobj
-
-└── README.txt
+      .
+      ├── compiler/
+      │   ├── lexer.py
+      │   ├── parser.py
+      │   ├── assembler.py
+      │   └── disassembler.py
+      ├── main.py
+      ├── output.cobj
+      └── README.txt
 
 --------------------------
 ✅ Output Tabs in GUI
