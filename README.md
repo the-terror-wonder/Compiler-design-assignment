@@ -1,6 +1,6 @@
-==============================================
+============================================
 #🧠 Custom Instruction In the Compiler
-==============================================
+============================================
 
 A mini compiler built with Python and ttkbootstrap GUI. It supports basic arithmetic expressions and a custom DIVDIV instruction format, with objdump disassembly visualization.
 
