@@ -167,6 +167,6 @@ Simplified View:
 --------------------------
 ✨ Author : Amit kumar panchayan
 --------------------------
-✨ Roll NO. : 23115005
+✨ Roll No. : 23115005
 --------------------------
-Built with ❤️ for Compiler Design.
+#Built with ❤️ for Compiler Design.
