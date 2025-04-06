@@ -1,11 +1,11 @@
 ============================================
-#🧠 Custom Instruction In the Compiler
+🧠 Custom Instruction In the Compiler
 ============================================
 
 A mini compiler built with Python and ttkbootstrap GUI. It supports basic arithmetic expressions and a custom DIVDIV instruction format, with objdump disassembly visualization.
 
 --------------------------
-#🚀 Features
+🚀 Features
 --------------------------
 - Parse and compile expressions like: DIVDIV A B C
 - Special command support: DIVDIV A B C
@@ -18,7 +18,7 @@ A mini compiler built with Python and ttkbootstrap GUI. It supports basic arithm
 - GUI powered by ttkbootstrap and tkinter
 
 --------------------------
-#🛠️ Installation
+🛠️ Installation
 --------------------------
 1. Clone the repository:
    git clone https://github.com/yourusername/sage_compiler.git
@@ -34,7 +34,7 @@ A mini compiler built with Python and ttkbootstrap GUI. It supports basic arithm
      Install via MinGW or use WSL
 
 --------------------------
-#🖥️ Running the GUI
+🖥️ Running the GUI
 --------------------------
 Run:
    python main.py
@@ -60,7 +60,7 @@ Custom instruction:
    DIVDIV 16 4 2
 
 --------------------------
-#🌳 Parse Tree (for `x = 16 / 4 / 2`)
+🌳 Parse Tree (for `x = 16 / 4 / 2`)
 --------------------------
 The expression is parsed into a right-associative binary tree:
 
@@ -75,7 +75,7 @@ Which evaluates as:
    x = 4 / 2 = 2.0
 
 --------------------------
-#🧠 What Happens?
+🧠 What Happens?
 --------------------------
 Example: x = 16 / 4 / 2
 
@@ -92,7 +92,7 @@ Custom instruction:
    ➝ Stored in output.cobj
 
 --------------------------
-#🔬 Objdump Output
+🔬 Objdump Output
 --------------------------
 Raw disassembly of output.cobj using:
    objdump -d -M intel output.cobj
@@ -109,7 +109,7 @@ Simplified View:
    mov %eax, [x]
 
 --------------------------
-#📂 Folder Structure
+📂 Folder Structure
 --------------------------
 .
 ├── compiler/
@@ -122,7 +122,7 @@ Simplified View:
 └── README.txt
 
 --------------------------
-#✅ Output Tabs in GUI
+✅ Output Tabs in GUI
 --------------------------
 - Symbol Table: shows target and used variables
 - TAC: shows three-address code breakdown
@@ -130,7 +130,8 @@ Simplified View:
 - Program Output: shows final computation result
 
 --------------------------
-##✨ Author : Amit kumar panchayan
-##✨ Roll NO. : 23115005
+✨ Author : Amit kumar panchayan
+--------------------------
+✨ Roll NO. : 23115005
 --------------------------
 Built with ❤️ for Compiler Design.
