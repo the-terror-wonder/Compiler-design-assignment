@@ -6,9 +6,16 @@ A mini compiler built with Python and ttkbootstrap GUI. It supports basic arithm
 --------------------------
 🚀 Features
 --------------------------
-- Parse and compile expressions like: DIVDIV A B C
-- Special command support: DIVDIV A B C
+- Parse and compile expressions like:
+
+  DIVDIV A B C
+  
+- Special command support:
+
+  DIVDIV A B C
+  
 - Generate .cobj object code
+  
 - View output via:
   • Symbol Table
   • Three-Address Code (TAC)
